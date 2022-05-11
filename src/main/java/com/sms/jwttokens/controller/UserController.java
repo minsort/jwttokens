@@ -45,11 +45,6 @@ public class UserController {
     }
 
     @RequestMapping(value="/register", method = RequestMethod.POST)
-    public User saveUser(@RequestBody User user){
-        return userService.save(user);
-    }
-
-    @RequestMapping(value="/register", method = RequestMethod.POST)
     public User saveUser(@RequestBody UserDto user){
         return userService.save(user);
     }

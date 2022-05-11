@@ -1,6 +1,7 @@
 package com.sms.jwttokens.dao;
 
 import com.sms.jwttokens.model.User;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
