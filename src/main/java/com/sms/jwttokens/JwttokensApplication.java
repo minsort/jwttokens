@@ -12,9 +12,6 @@ public class JwttokensApplication {
         SpringApplication.run(JwttokensApplication.class, args);
     }
 
-    @Bean
-    public BCryptPasswordEncoder encoder(){
-        return new BCryptPasswordEncoder();
-    }
+
 
 }
