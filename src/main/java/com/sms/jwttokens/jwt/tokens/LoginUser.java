@@ -1,4 +1,4 @@
-package com.sms.jwttokens.tokens;
+package com.sms.jwttokens.jwt.tokens;
 
 import lombok.Getter;
 

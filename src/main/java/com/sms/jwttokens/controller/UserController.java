@@ -4,8 +4,8 @@ import com.sms.jwttokens.dao.UserDto;
 import com.sms.jwttokens.jwt.TokenProvider;
 import com.sms.jwttokens.model.User;
 import com.sms.jwttokens.service.UserService;
-import com.sms.jwttokens.tokens.AuthToken;
-import com.sms.jwttokens.tokens.LoginUser;
+import com.sms.jwttokens.jwt.tokens.AuthToken;
+import com.sms.jwttokens.jwt.tokens.LoginUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -29,6 +29,12 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+
+    @GetMapping("/a")
+    public String r(){
+        return "AAAAA";
+    }
 
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
     public ResponseEntity<?> generateToken(@RequestBody LoginUser loginUser) throws AuthenticationException {
